@@ -17,11 +17,9 @@ void initialize(std::vector<std::vector<int>>& map) {
     
     for (int x = 0; x < x_size; ++x) {
         for (int y = 0; y < y_size; ++y) {
-            // std::cout << "(" << x << "," << y << "): ";
             int num = 0;
             std::cin >> num;
             map[x][y] = num;
-            // std::cout << "\n";
         }
     }
 }
