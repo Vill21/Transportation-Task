@@ -159,8 +159,8 @@ std::vector<std::vector<int>> calculate(std::vector<int> _providers, std::vector
 }
 
 int main() {
-    constexpr int prov_cnt = 3;
-    constexpr int custom_cnt = 3;
+    constexpr int prov_cnt = 4;
+    constexpr int custom_cnt = 5;
     
     std::vector<int> providers(prov_cnt);
     std::vector<int> customers(custom_cnt);
@@ -176,9 +176,7 @@ int main() {
     std::cout << "Map: \n";
     initialize(map);
     
-    std::vector<int> ans_line = minimum_line(providers, map);
-    std::vector<int> ans_row = minimum_row(customers, map, providers);
-    
+    // Example: 
     // Providers: 100 300 180 320
     // Customers: 200 250 120 130 200
     // Map: 10 7 2 5 5 4 9 8 1 3 5 12 16 8 7 7 4 6 3 11
