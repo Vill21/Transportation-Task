@@ -113,7 +113,7 @@ std::vector<std::vector<int>> calculate(std::vector<int> _providers, std::vector
     while (fin(_providers) == false && fin(_customers) == false) {
         std::vector<int> row = minimum_row(_customers, _map, _providers);
         
-        // ищем максимальную разницу в значениях потребностей (самую высокую потребность)
+        // ищем максимальную разницу в значениях тарифов (самую низкую стоимость перевозки)
         int max_row = -1;
         int y_max = -1;
         for (int i = 0; i < y_size; ++i) {
